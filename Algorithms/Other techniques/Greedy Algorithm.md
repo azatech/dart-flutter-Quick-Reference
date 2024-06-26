@@ -1,8 +1,11 @@
 ## Greedy Algorithm
 
 ### Overview of Greedy Algorithm
-A greedy algorithm is an approach for solving problems by making the locally optimal choice at each step with the hope of finding the global optimum. 
-The main idea is to build up a solution piece by piece, always choosing the next piece that offers the most immediate benefit.
+
+A greedy algorithm is an approach for solving problems by making the locally optimal choice at each
+step with the hope of finding the global optimum.
+The main idea is to build up a solution piece by piece, always choosing the next piece that offers
+the most immediate benefit.
 
 Example
 Input: Coins = [1, 2, 5], Amount = 11

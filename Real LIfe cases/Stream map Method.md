@@ -11,6 +11,7 @@ Stream<AudioEvent> get eventStream;
 ```
 
 - Additional classes and enum from plugin
+
 ```
 enum AudioEventType { log, duration, seekComplete, complete, prepared }
 
@@ -30,7 +31,9 @@ final class AudioPlayer implements AudioPlayerI {
 }
 ```
 
-- Now we create our own interface based on the provided technical requirements, which includes the method [onPrepared] that **is not available in the [AudioPlayer] class**:
+- Now we create our own interface based on the provided technical requirements, which includes the
+  method [onPrepared] that **is not available in the [AudioPlayer] class**:
+
 ```
 /// Interface class for communication
 abstract class CustomAudioI {
@@ -43,7 +46,9 @@ abstract class CustomAudioI {
 ```
 
 #### We have 2 solutions:
+
 - 1.1. Write extension for base [AudioPlayer] class:
+
 ```
  extension AudioPlayerOnPreparedExtension on AudioPlayer {
    Stream<bool> get onPrepared => eventStream.map(
@@ -53,6 +58,7 @@ abstract class CustomAudioI {
 ```
 
 - 1.2. Use additional method from [extension]
+
 ```
  class CustomAudioImpl implements CustomAudioI {
    final audioPlayer = AudioPlayer();
@@ -65,7 +71,9 @@ abstract class CustomAudioI {
  }
 ```
 
-- 2.1. Implement an extra method within the [CustomAudioImpl] class to conform to the [CustomAudioI] interface:
+- 2.1. Implement an extra method within the [CustomAudioImpl] class to conform to the [CustomAudioI]
+  interface:
+
 ```
 class CustomAudioImpl implements CustomAudioI {
   final audioPlayer = AudioPlayer();

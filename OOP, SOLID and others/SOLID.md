@@ -35,7 +35,6 @@ make changes in multiple places. Avoid this by creating a single representation 
 system (SSOT). Don't repeat yourself.
 Cons: Think for yourself :)
 
-
 ## SOLID
 
 The paradigm cannot always be applied in code due to the language constraints. For example, Swift is
@@ -44,10 +43,12 @@ choosing between several "water filters" to purify it and deliver the cleanest w
 Achieving absolute purity in water is still impossible. We're just striving for the ideal.
 
 #### S - Single Responsibility Principle - one object is responsible for one responsibility.
+
 Example of violation: If an object is responsible for UI, data, etc., it's better to use three
 separate objects that are divided.
 
 #### O - Open Closed Principle - Software entities should be open for extension, but closed for
+
 modification. Use Extensions to add code, inherit, and extend.
 Example of violation: Imagine code already in production and working at 100%. Changing the
 functionality in already tested objects adds work for testers and increases development costs.
@@ -58,6 +59,7 @@ in the future. If you need to rewrite code instead of extending it, you haven't 
 Closed Principle.
 
 #### L - Liskov Substitution Principle - Objects in a program should be replaceable with instances of
+
 their subtypes without altering the correctness of the program.
 Example of violation: If the base class walks on legs and the subclass walks on hands, it's a
 mutant. In other words, you shouldn't change the functionality of the base class. You've violated
@@ -66,11 +68,13 @@ If subclasses override the behavior of the object, they should not break anythin
 functionality if needed. Use @Override + super.call().
 
 #### I - Interface Segregation Principle - Use interfaces.
+
 Example of violation: Many interfaces are better than using one interface for all cases. If a class
 implements an interface and doesn't implement all the methods from the interface, it's better to
 separate the methods into separate interfaces.
 
 #### D - Dependency Inversion Principle - Dependencies in the system should be based on abstractions.
+
 They should not depend on details.
 When we add dependency to an object, we should add abstractions instead of details. Thus, the object
 will depend on the abstraction.
@@ -81,6 +85,7 @@ Dependency Inversion
 But first, let's understand what Dependency Injection is. There are 3 initialization methods:
 
 - Initializer injection (an object needs another object to function properly)
+
 ```
 class DataManager { 
     private let serializer
@@ -92,6 +97,7 @@ class DataManager {
 ```
 
 - Property injection (an object can be dependent using a variable...)
+
 ```
   class SomeUIController {
       var requestManager: RequestManager? 
@@ -102,7 +108,10 @@ class DataManager {
   }
 ```
 
-- Method injection (if it doesn't make sense to add the entire dependency for the entire object, and it's actually only needed for one function, it makes sense to add the dependency through the function's input)
+- Method injection (if it doesn't make sense to add the entire dependency for the entire object, and
+  it's actually only needed for one function, it makes sense to add the dependency through the
+  function's input)
+
 ```
   class DataManager {
   func call(dataManager: DataManager) {

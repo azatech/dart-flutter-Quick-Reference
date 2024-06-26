@@ -1,18 +1,21 @@
 ## Sliding Window Technique
 
 ### Overview of Sliding Window Technique
-The sliding window technique is a method used to efficiently solve problems involving subarrays or substrings. It involves maintaining a window that slides over the input data to calculate or find a desired property within the window. This technique is particularly useful for problems involving:
+
+The sliding window technique is a method used to efficiently solve problems involving subarrays or
+substrings. It involves maintaining a window that slides over the input data to calculate or find a
+desired property within the window. This technique is particularly useful for problems involving:
 
 Finding the maximum or minimum sum of a subarray of fixed size.
 Finding a subarray or substring that meets certain criteria.
 Solving problems with overlapping subproblems.
-
 
 #### Leetcode: 3 Longest Substring Without Repeating Characters
 
 Input: s = "abcabcbb"
 Output: 3
 Explanation: The answer is "abc", with the length of 3.
+
 ```
 class Solution {
   int lengthOfLongestSubstring(String s) {
@@ -44,7 +47,8 @@ Input: nums = [1,3,2,2,5,2,3,7]
 Output: 5
 Explanation: The longest harmonious subsequence is [3,2,2,2,3].
 
-#### Swift code: 
+#### Swift code:
+
 ```
 class Solution {
     func findLHS(_ nums: [Int]) -> Int {

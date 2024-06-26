@@ -21,7 +21,9 @@ Compare 9 and 10. Since 9 < 10, no swap needed: [3, 4, 9, 10]
 
 Result:
 The final sorted list is [3, 4, 9, 10]
-In each iteration, Bubble Sort compares adjacent elements and swaps them if they are in the wrong order. After each iteration, the largest unsorted element bubbles up to its correct position. This process repeats until the entire list is sorted.
+In each iteration, Bubble Sort compares adjacent elements and swaps them if they are in the wrong
+order. After each iteration, the largest unsorted element bubbles up to its correct position. This
+process repeats until the entire list is sorted.
 
 ```
 extension SwappableList<E> on List<E> {
@@ -32,6 +34,7 @@ extension SwappableList<E> on List<E> {
   }
 }
 ```
+
 ```
 import 'swap.dart';
 void bubbleSort<E extends Comparable<dynamic>>(List<E> list) {
@@ -73,7 +76,8 @@ The remaining element is 10, which is already in the correct position.
 Result:
 The final sorted list is [3, 4, 9, 10].
 
-In each iteration, Selection Sort finds the smallest element in the unsorted portion of the list and swaps it with the first unsorted element. This process repeats until the entire list is sorted.
+In each iteration, Selection Sort finds the smallest element in the unsorted portion of the list and
+swaps it with the first unsorted element. This process repeats until the entire list is sorted.
 
 ```
 import 'swap.dart';
@@ -103,18 +107,24 @@ void selectionSort<E extends Comparable<dynamic>>(List<E> list) {
 Consider the list of cards: [9, 4, 10, 3]
 
 Iteration 1:
-Start with the second element (4). Compare it with the first element (9). Since 4 < 9, move 9 to the right and insert 4 in the first position: [4, 9, 10, 3]
+Start with the second element (4). Compare it with the first element (9). Since 4 < 9, move 9 to the
+right and insert 4 in the first position: [4, 9, 10, 3]
 
 Iteration 2:
-Move to the third element (10). Compare it with the elements before it. Since 10 > 9, no movement is needed: [4, 9, 10, 3]
+Move to the third element (10). Compare it with the elements before it. Since 10 > 9, no movement is
+needed: [4, 9, 10, 3]
 
 Iteration 3:
-Move to the fourth element (3). Compare it with the elements before it. Since 3 < 10, move 10 to the right. Since 3 < 9, move 9 to the right. Since 3 < 4, move 4 to the right. Insert 3 at the beginning: [3, 4, 9, 10]
+Move to the fourth element (3). Compare it with the elements before it. Since 3 < 10, move 10 to the
+right. Since 3 < 9, move 9 to the right. Since 3 < 4, move 4 to the right. Insert 3 at the
+beginning: [3, 4, 9, 10]
 
 Result:
 The final sorted list is [3, 4, 9, 10].
 
-In each iteration, Insertion Sort takes the next element and places it in its correct position among the previously sorted elements.
+In each iteration, Insertion Sort takes the next element and places it in its correct position among
+the previously sorted elements.
+
 ```
 import 'swap.dart';
 
