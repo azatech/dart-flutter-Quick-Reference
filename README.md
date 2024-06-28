@@ -8,20 +8,22 @@ covering:
 - Fundamental Algorithms
 - Object-Oriented Programming (OOP) and SOLID principles
 - Good Design practices and Architecture principles
+- Real-world challenges and solutions
+- Useful projects
 
 ## Contents:
+#### Algorithms :
+- [Link](https://github.com/azatech/dart-flutter-Quick-Reference/tree/main/Algorithms)
 
-#### Algorithms Section:
+#### Real-world challenges and solutions 
+- [Link](https://github.com/azatech/dart-flutter-Quick-Reference/tree/main/Real%20LIfe%20cases)
 
-Explore various algorithms with clear explanations and implementation examples in Dart.
+#### Useful projects
+- [dart-define](https://github.com/azatech/dart_define_example)
 
-#### Architecture Diagrams
+#### OOP, SOLID and others
+- [Link](https://github.com/azatech/dart-flutter-Quick-Reference/tree/main/OOP%2C%20SOLID%20and%20others)
 
-Visualize different software architectures commonly used in Dart and Flutter development through
-detailed diagrams.
+#### Flutter Trees
+- [Link](https://github.com/azatech/dart-flutter-Quick-Reference/tree/main/Flutter%20Trees)
 
-#### Real-life Use Cases
-
-Delve into both typical and atypical scenarios encountered in mobile app development using Flutter.
-This section provides practical demonstrations and graphic representations to illustrate real-world
-challenges and solutions.
