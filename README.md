@@ -12,11 +12,11 @@ covering:
 - Useful projects
 
 ## Contents:
-#### Algorithms :
+#### Algorithms:
 - [Link](https://github.com/azatech/dart-flutter-Quick-Reference/tree/main/Algorithms)
 
 #### Real-world challenges and solutions 
-- [Link](https://github.com/azatech/dart-flutter-Quick-Reference/tree/main/Real%20LIfe%20cases)
+- [Link](https://github.com/azatech/dart-flutter-Quick-Reference/tree/main/Real%20Life%20cases)
 
 #### Useful projects
 - [dart-define](https://github.com/azatech/dart_define_example)
